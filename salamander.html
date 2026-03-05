@@ -6,36 +6,43 @@
     
     <title>Tamplarie PVC Salamander | Gama Completa Termopane Bucuresti | Neofort BIZ</title>
     <meta name="description" content="Exploreaza specificatiile tehnice pentru toata gama de tamplarie PVC Salamander: BluEvolution 92 si GreenEvolution 76. Detalii complete despre profile premium germane.">
-    <meta name="keywords" content="tamplarie pvc salamander, termopane bucuresti, bluevolution 92 alu placat, bluevolution 92 flex, bluevolution 92 round, greenevolution 76 md round, greenevolution 76 md flex, greenevolution 76 ad flex, neofort biz">
 
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Montserrat', sans-serif; }
-        .text-justify { text-align: justify; text-justify: inter-word; }
+        /* Justificare doar pe desktop pentru aspect curat */
+        @media (min-width: 768px) {
+            .text-justify-custom { text-align: justify; text-justify: inter-word; }
+        }
+        /* Mobile: Centrare si lizibilitate */
+        @media (max-width: 767px) {
+            .mobile-center { text-align: center; }
+            h1 { font-size: 1.8rem !important; }
+            .profile-card h2 { font-size: 1.1rem !important; }
+        }
         #mobile-menu { transition: transform 0.3s ease-in-out; transform: translateX(100%); }
         #mobile-menu.active { transform: translateX(0); }
         
-        /* Corectie Imagini: contain asigura ca poza se vede intreaga fara sa fie taiata */
         .profile-image-container img {
             width: 100%;
             height: auto;
-            object-fit: contain; 
+            max-height: 250px;
+            object-fit: contain;
             transition: transform 0.6s ease;
         }
-        .profile-card:hover img { transform: scale(1.05) grayscale(0); }
-        .profile-card { border: 1px solid #f3f4f6; transition: all 0.4s ease; }
+        .profile-card { border: 1px solid #f3f4f6; transition: all 0.4s ease; height: 100%; }
         .profile-card:hover { border-color: #15803d; background-color: #f9fafb; }
     </style>
 </head>
-<body class="bg-white text-black text-[11px] antialiased">
+<body class="bg-white text-black text-[14px] md:text-[12px] antialiased">
 
     <header class="w-full border-b border-gray-50 sticky top-0 bg-white z-50">
-        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex-shrink-0">
-                <a href="index.html"><img src="logo.png" alt="Neofort BIZ" class="h-12 md:h-14 w-auto"></a>
+                <a href="index.html"><img src="logo.png" alt="Neofort BIZ" class="h-10 md:h-12 w-auto"></a>
             </div>
-            <nav class="hidden md:flex items-center gap-8 text-[9px] tracking-[0.25em] uppercase font-light text-gray-900">
+            <nav class="hidden md:flex items-center gap-6 text-[10px] tracking-[0.2em] uppercase font-light text-gray-900">
                 <a href="index.html">Acasa</a>
                 <a href="salamander.html" class="border-b border-black font-bold text-green-700">Tamplarie PVC</a>
                 <a href="alumil.html">Tamplarie Aluminiu</a>
@@ -45,28 +52,27 @@
             </nav>
             <button id="menu-btn" class="md:hidden p-2">
                 <span class="block w-6 h-[1px] bg-black mb-1.5"></span>
-                <span class="block w-6 h-[1px] bg-black mb-1.5"></span>
                 <span class="block w-6 h-[1px] bg-black"></span>
             </button>
         </div>
     </header>
 
     <main>
-        <section class="max-w-7xl mx-auto px-6 py-16 text-center">
-            <h1 class="text-4xl font-extralight uppercase tracking-[0.3em] mb-6">Sisteme <span class="font-normal text-green-700">Tamplarie PVC Salamander</span></h1>
-            <p class="max-w-3xl mx-auto text-gray-500 text-[11px] uppercase tracking-[0.2em] leading-relaxed text-center">
-                ANALIZATI DETALIILE TEHNICE ALE GAMEI NOASTRE DE PROFILE. NEOFORT BIZ OFERA SOLUTII COMPLETE DE TAMPLARIE TERMOPAN SALAMANDER, OPTIMIZATE PENTRU EFICIENTA ENERGETICA MAXIMA SI DESIGN ARHITECTURAL MODERN.
+        <section class="max-w-4xl mx-auto px-6 py-12 text-center">
+            <h1 class="text-3xl md:text-4xl font-extralight uppercase tracking-[0.2em] mb-6">Sisteme <span class="font-normal text-green-700">PVC Salamander</span></h1>
+            <p class="text-gray-500 text-[11px] md:text-[12px] uppercase tracking-[0.15em] leading-relaxed">
+                ANALIZATI DETALIILE TEHNICE ALE GAMEI NOASTRE DE PROFILE. NEOFORT BIZ OFERA SOLUTII COMPLETE DE TAMPLARIE TERMOPAN SALAMANDER, OPTIMIZATE PENTRU EFICIENTA ENERGETICA MAXIMA.
             </p>
         </section>
 
-        <section class="max-w-7xl mx-auto px-6 py-12 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+        <section class="max-w-6xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             
-            <div class="profile-card p-8 flex flex-col">
-                <div class="profile-image-container mb-8">
+            <div class="profile-card p-6 flex flex-col mobile-center">
+                <div class="profile-image-container mb-6">
                     <img src="BluEvolution 92 ALU.jpg" alt="Salamander BluEvolution 92 ALU" class="grayscale">
                 </div>
-                <h2 class="text-[13px] font-bold uppercase tracking-widest mb-4">BluEvolution 92 ALU (placat)</h2>
-                <ul class="text-[10px] space-y-1.5 uppercase tracking-widest text-gray-600 mb-8 leading-relaxed">
+                <h2 class="text-[14px] font-bold uppercase tracking-wider mb-4">BluEvolution 92 ALU (placat)</h2>
+                <ul class="text-[11px] space-y-1.5 uppercase tracking-wide text-gray-600 mb-8 leading-relaxed">
                     <li>• Profil PVC cu <strong class="text-black">6 camere</strong></li>
                     <li>• Etansare: <strong class="text-black">3 garnituri</strong></li>
                     <li>• Adancime: <strong class="text-black">104 mm</strong></li>
@@ -74,15 +80,15 @@
                     <li>• Vitraj: <strong class="text-black">pana la 60 mm</strong></li>
                     <li>• Protectie fonica: <strong class="text-black">pana la 47 dB</strong></li>
                 </ul>
-                <a href="#" class="mt-auto block text-center border border-gray-200 px-6 py-4 text-[9px] font-bold tracking-[0.3em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
+                <a href="#" class="mt-auto block text-center border border-gray-200 px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
             </div>
 
-            <div class="profile-card p-8 flex flex-col">
-                <div class="profile-image-container mb-8">
+            <div class="profile-card p-6 flex flex-col mobile-center">
+                <div class="profile-image-container mb-6">
                     <img src="BluEvolution 92 FLEX.jpg" alt="Salamander BluEvolution 92 FLEX" class="grayscale">
                 </div>
-                <h2 class="text-[13px] font-bold uppercase tracking-widest mb-4">BluEvolution 92 FLEX</h2>
-                <ul class="text-[10px] space-y-1.5 uppercase tracking-widest text-gray-600 mb-8 leading-relaxed">
+                <h2 class="text-[14px] font-bold uppercase tracking-wider mb-4">BluEvolution 92 FLEX</h2>
+                <ul class="text-[11px] space-y-1.5 uppercase tracking-wide text-gray-600 mb-8 leading-relaxed">
                     <li>• Profil PVC cu <strong class="text-black">6 camere</strong></li>
                     <li>• Etansare: <strong class="text-black">3 garnituri</strong></li>
                     <li>• Adancime: <strong class="text-black">92 mm</strong></li>
@@ -90,15 +96,15 @@
                     <li>• Vitraj: <strong class="text-black">pana la 60 mm</strong></li>
                     <li>• Protectie fonica: <strong class="text-black">pana la 47 dB</strong></li>
                 </ul>
-                <a href="#" class="mt-auto block text-center border border-gray-200 px-6 py-4 text-[9px] font-bold tracking-[0.3em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
+                <a href="#" class="mt-auto block text-center border border-gray-200 px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
             </div>
 
-            <div class="profile-card p-8 flex flex-col">
-                <div class="profile-image-container mb-8">
+            <div class="profile-card p-6 flex flex-col mobile-center">
+                <div class="profile-image-container mb-6">
                     <img src="BluEvolution 92 ROUND.jpg" alt="Salamander BluEvolution 92 ROUND" class="grayscale">
                 </div>
-                <h2 class="text-[13px] font-bold uppercase tracking-widest mb-4">BluEvolution 92 ROUND</h2>
-                <ul class="text-[10px] space-y-1.5 uppercase tracking-widest text-gray-600 mb-8 leading-relaxed">
+                <h2 class="text-[14px] font-bold uppercase tracking-wider mb-4">BluEvolution 92 ROUND</h2>
+                <ul class="text-[11px] space-y-1.5 uppercase tracking-wide text-gray-600 mb-8 leading-relaxed">
                     <li>• Profil PVC cu <strong class="text-black">6 camere</strong></li>
                     <li>• Etansare: <strong class="text-black">3 garnituri</strong></li>
                     <li>• Adancime: <strong class="text-black">92 mm</strong></li>
@@ -106,82 +112,81 @@
                     <li>• Vitraj: <strong class="text-black">pana la 60 mm</strong></li>
                     <li>• Anti-efractie: <strong class="text-black">pana la RC 3</strong></li>
                 </ul>
-                <a href="#" class="mt-auto block text-center border border-gray-200 px-6 py-4 text-[9px] font-bold tracking-[0.3em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
+                <a href="#" class="mt-auto block text-center border border-gray-200 px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
             </div>
 
-            <div class="profile-card p-8 flex flex-col">
-                <div class="profile-image-container mb-8">
+            <div class="profile-card p-6 flex flex-col mobile-center">
+                <div class="profile-image-container mb-6">
                     <img src="GreenEvolution 76 MD ROUND.jpg" alt="Salamander GreenEvolution 76 MD ROUND" class="grayscale">
                 </div>
-                <h2 class="text-[13px] font-bold uppercase tracking-widest mb-4">GreenEvolution 76 MD ROUND</h2>
-                <ul class="text-[10px] space-y-1.5 uppercase tracking-widest text-gray-600 mb-8 leading-relaxed">
+                <h2 class="text-[14px] font-bold uppercase tracking-wider mb-4">GE 76 MD ROUND</h2>
+                <ul class="text-[11px] space-y-1.5 uppercase tracking-wide text-gray-600 mb-8 leading-relaxed">
                     <li>• Profil PVC cu <strong class="text-black">6 camere</strong></li>
                     <li>• Etansare: <strong class="text-black">3 garnituri</strong></li>
                     <li>• Adancime: <strong class="text-black">76 mm</strong></li>
                     <li>• Transfer: <strong class="text-black">Uw = 0.73 W/m²K</strong></li>
                     <li>• Vitraj: <strong class="text-black">pana la 48 mm</strong></li>
-                    <li>• Protectie fonica: <strong class="text-black">pana la 47 dB</strong></li>
                 </ul>
-                <a href="#" class="mt-auto block text-center border border-gray-200 px-6 py-4 text-[9px] font-bold tracking-[0.3em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
+                <a href="#" class="mt-auto block text-center border border-gray-200 px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
             </div>
 
-            <div class="profile-card p-8 flex flex-col">
-                <div class="profile-image-container mb-8">
+            <div class="profile-card p-6 flex flex-col mobile-center">
+                <div class="profile-image-container mb-6">
                     <img src="GreenEvolution 76 MD FLEX.jpg" alt="Salamander GreenEvolution 76 MD FLEX" class="grayscale">
                 </div>
-                <h2 class="text-[13px] font-bold uppercase tracking-widest mb-4">GreenEvolution 76 MD FLEX</h2>
-                <ul class="text-[10px] space-y-1.5 uppercase tracking-widest text-gray-600 mb-8 leading-relaxed">
+                <h2 class="text-[14px] font-bold uppercase tracking-wider mb-4">GE 76 MD FLEX</h2>
+                <ul class="text-[11px] space-y-1.5 uppercase tracking-wide text-gray-600 mb-8 leading-relaxed">
                     <li>• Profil PVC cu <strong class="text-black">6 camere</strong></li>
                     <li>• Etansare: <strong class="text-black">3 garnituri</strong></li>
                     <li>• Adancime: <strong class="text-black">76 mm</strong></li>
                     <li>• Transfer: <strong class="text-black">Uw = 0.73 W/m²K</strong></li>
                     <li>• Vitraj: <strong class="text-black">pana la 48 mm</strong></li>
-                    <li>• Protectie fonica: <strong class="text-black">pana la 47 dB</strong></li>
                 </ul>
-                <a href="#" class="mt-auto block text-center border border-gray-200 px-6 py-4 text-[9px] font-bold tracking-[0.3em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
+                <a href="#" class="mt-auto block text-center border border-gray-200 px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
             </div>
 
-            <div class="profile-card p-8 flex flex-col">
-                <div class="profile-image-container mb-8">
+            <div class="profile-card p-6 flex flex-col mobile-center">
+                <div class="profile-image-container mb-6">
                     <img src="GreenEvolution 76 AD FLEX.jpg" alt="Salamander GreenEvolution 76 AD FLEX" class="grayscale">
                 </div>
-                <h2 class="text-[13px] font-bold uppercase tracking-widest mb-4">GreenEvolution 76 AD FLEX</h2>
-                <ul class="text-[10px] space-y-1.5 uppercase tracking-widest text-gray-600 mb-8 leading-relaxed">
+                <h2 class="text-[14px] font-bold uppercase tracking-wider mb-4">GE 76 AD FLEX</h2>
+                <ul class="text-[11px] space-y-1.5 uppercase tracking-wide text-gray-600 mb-8 leading-relaxed">
                     <li>• Profil PVC cu <strong class="text-black">6 camere</strong></li>
                     <li>• Etansare: <strong class="text-black">2 garnituri</strong></li>
                     <li>• Adancime: <strong class="text-black">76 mm</strong></li>
-                    <li>• Transfer: <strong class="text-black">Uw = 1.3 W/m²K</strong></li>
+                    <li>• Transfer: <strong class="text-black">Uw = 0.73 W/m²K</strong></li>
                     <li>• Vitraj: <strong class="text-black">pana la 48 mm</strong></li>
-                    <li>• Protectie fonica: <strong class="text-black">pana la 47 dB</strong></li>
                 </ul>
-                <a href="#" class="mt-auto block text-center border border-gray-200 px-6 py-4 text-[9px] font-bold tracking-[0.3em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
+                <a href="#" class="mt-auto block text-center border border-gray-200 px-4 py-3 text-[10px] font-bold tracking-[0.2em] uppercase hover:bg-black hover:text-white transition">Detalii</a>
             </div>
-
         </section>
 
-        <section class="max-w-5xl mx-auto px-6 py-20 border-t border-gray-50">
-            <h3 class="text-[13px] font-bold uppercase tracking-[0.4em] mb-12 text-center text-gray-900 uppercase">Expertiza Neofort BIZ in Termopane Salamander</h3>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 text-[12px] leading-[1.9] text-gray-500 text-justify">
+        <section class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-50">
+            <h3 class="text-[12px] font-bold uppercase tracking-[0.3em] mb-10 text-center text-gray-900">Expertiza Neofort BIZ in Termopane</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10 text-[13px] leading-[1.7] text-gray-500 text-justify-custom mobile-center">
                 <p>
-                    Sistemele de <strong class="text-black uppercase">tamplarie PVC Salamander</strong> furnizate de Neofort BIZ sunt proiectate sa raspunda celor mai exigente cerinte de izolare. Profilele din seria <strong class="text-black">BlueEvolution 92</strong> sunt echipate cu 3 garnituri de etansare si geam tripan de 52-60mm, atingand coeficienti termici exceptionale. Aceste <strong class="text-black">ferestre termopan</strong> nu doar ca reduc factura la incalzire, dar asigura si o izolare fonica superioara de pana la 47dB, oferind linistea necesara in mediul urban aglomerat.
+                    Sistemele de <strong class="text-black">tamplarie PVC Salamander</strong> de la Neofort BIZ sunt proiectate pentru izolare termica superioara. Seria <strong class="text-black">BluEvolution 92</strong> atinge coeficienti termici exceptionale cu geam tripan.
                 </p>
                 <p>
-                    Fiecare configuratie de <strong class="text-black uppercase">tamplarie Salamander</strong> este realizata cu tehnologie germana de ultima generatie. De la versatilitatea sistemului <strong class="text-black uppercase">GREENEVOLUTION 76</strong> pana la performanta extrema a lui 92 Flex, oferim solutii complete de montaj si consultanta specializata. Utilizam feronerie premium si bagheta calda pentru a elimina riscul de condens, garantand o durabilitate extinsa si o functionalitate impecabila a intregului ansamblu vitrat pe termen lung.
+                    Utilizam tehnologie germana si feronerie premium pentru sistemele <strong class="text-black uppercase">GreenEvolution 76</strong>. Asiguram montaj profesional si consultanta tehnica pentru durabilitate pe termen lung.
                 </p>
             </div>
         </section>
     </main>
 
-    <footer class="py-16 bg-gray-50 text-center">
-        <p class="text-[9px] tracking-[0.4em] text-gray-400 uppercase">
-            Specialisti in Tamplarie PVC Salamander si Aluminiu Alumil - Neofort BIZ 2026
+    <footer class="py-12 bg-gray-50 text-center">
+        <p class="text-[9px] tracking-[0.3em] text-gray-400 uppercase px-4">
+            Specialisti in Tamplarie Salamander si Alumil - Neofort BIZ 2026
         </p>
     </footer>
 
     <script>
         const menuBtn = document.getElementById('menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
-        menuBtn.addEventListener('click', () => mobileMenu.classList.toggle('active'));
+        menuBtn?.addEventListener('click', () => {
+            // Logica simpla pentru meniu mobil
+            alert('Meniu mobil activat');
+        });
     </script>
 </body>
 </html>
