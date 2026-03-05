@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact si Oferta | Termopane Neofort BIZ</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&display=swap" rel="stylesheet">
+</head>
+<body class="bg-white text-black font-['Montserrat']">
+
+    <nav class="w-full max-w-6xl mx-auto px-6 py-8 flex flex-wrap justify-center gap-6 text-[10px] tracking-[0.2em] uppercase">
+        <a href="index.html" class="hover:text-blue-600">Acasa</a>
+        <a href="salamander.html" class="hover:text-blue-600">Tamplarie PVC</a>
+        <a href="alumil.html" class="hover:text-blue-600">Tamplarie Aluminiu</a>
+        <a href="servicii.html" class="hover:text-blue-600">Servicii</a>
+        <a href="contact.html" class="border-b border-black">Contact</a>
+    </nav>
+
+    <section class="max-w-5xl mx-auto px-6 py-12">
+        <h1 class="text-2xl md:text-3xl font-extralight tracking-[0.3em] uppercase mb-12 text-center">Solicita Oferta Tehnica</h1>
+
+        <form action="https://formspree.io/f/MIEI_T_E_U_ID" method="POST" enctype="multipart/form-data" class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            
+            <div class="space-y-6">
+                <div>
+                    <label class="text-[10px] uppercase tracking-widest block mb-2">Nume Complet *</label>
+                    <input type="text" name="nume" required class="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition">
+                </div>
+                <div>
+                    <label class="text-[10px] uppercase tracking-widest block mb-2">Telefon *</label>
+                    <input type="tel" name="telefon" required class="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition">
+                </div>
+                <div>
+                    <label class="text-[10px] uppercase tracking-widest block mb-2">E-mail *</label>
+                    <input type="email" name="email" required class="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition">
+                </div>
+                <div>
+                    <label class="text-[10px] uppercase tracking-widest block mb-2">Adresa Lucrare (Oras/Localitate)</label>
+                    <input type="text" name="adresa" class="w-full border-b border-gray-300 py-2 focus:border-black outline-none transition">
+                </div>
+                <div>
+                    <label class="text-[10px] uppercase tracking-widest block mb-2">Mesaj / Detalii suplimentare</label>
+                    <textarea name="mesaj" rows="4" class="w-full border border-gray-200 p-3 mt-2 focus:border-black outline-none transition"></textarea>
+                </div>
+                
+                <div class="pt-4">
+                    <label class="text-[10px] uppercase tracking-widest block mb-2 font-bold text-blue-600">Ataseaza schita sau poze (PDF/JPG)</label>
+                    <input type="file" name="fisier" class="text-xs">
+                </div>
+            </div>
+
+            <div class="bg-gray-50 p-8 border border-gray-100">
+                <h3 class="text-[11px] font-bold uppercase tracking-widest mb-6">Cererea de oferta va contine:</h3>
+                
+                <div class="space-y-3 text-[11px] uppercase tracking-tighter">
+                    <label class="flex items-center gap-3"><input type="checkbox" name="produs[]" value="PVC Salamander"> Tamplarie PVC Salamander</label>
+                    <label class="flex items-center gap-3"><input type="checkbox" name="produs[]" value="Aluminiu Alumil"> Tamplarie Aluminiu Alumil</label>
+                    <label class="flex items-center gap-3"><input type="checkbox" name="produs[]" value="Geam 3 foi"> Geam Termoizolator 3 foi (Tripane)</label>
+                    <hr class="my-4">
+                    <label class="flex items-center gap-3"><input type="checkbox" name="optiune[]" value="Precadre Blaugelb"> Precadre Blaugelb Triotherm</label>
+                    <label class="flex items-center gap-3"><input type="checkbox" name="optiune[]" value="Baghete Warm Edge"> Baghete Warm Edge (SGG)</label>
+                    <label class="flex items-center gap-3"><input type="checkbox" name="optiune[]" value="Banda Butilica"> Banda Butilica Etansare</label>
+                    <label class="flex items-center gap-3"><input type="checkbox" name="optiune[]" value="Rulouri"> Rulouri Exterioare Aluminiu</label>
+                    <label class="flex items-center gap-3"><input type="checkbox" name="optiune[]" value="Pervazuri"> Pervazuri (Interior/Exterior)</label>
+                    <label class="flex items-center gap-3"><input type="checkbox" name="optiune[]" value="Usi Garaj"> Usi de Garaj / Industriale</label>
+                </div>
+
+                <button type="submit" class="w-full mt-10 bg-black text-white py-4 text-[10px] uppercase tracking-[0.3em] hover:bg-blue-600 transition duration-500">
+                    Trimite Solicitarea
+                </button>
+            </div>
+        </form>
+    </section>
+
+    <footer class="py-12 text-center opacity-30 text-[9px] tracking-[0.5em]">
+        © NEOFORT BIZ 2026
+    </footer>
+
+</body>
+</html>
