@@ -6,23 +6,29 @@
     
     <title>Tamplarie PVC Salamander & Aluminiu Alumil | Neofort BIZ Bucuresti</title>
     <meta name="description" content="Expertii Neofort BIZ in tamplarie PVC Salamander si Aluminiu Alumil. Solutii premium nZEB, geam tripan si montaj profesional in Bucuresti. Eficienta energetica germana.">
-    <meta name="keywords" content="tamplarie pvc salamander, tamplarie aluminiu alumil, termopane salamander bucuresti, ferestre aluminiu pret, usi aluminiu moderne, nZEB, geam tripan, neofort biz">
-    <link rel="canonical" href="https://neofort-biz.ro/" />
-
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Montserrat', sans-serif; }
         .text-justify { text-align: justify; text-justify: inter-word; }
+        /* Animatie pentru meniul mobil */
+        #mobile-menu {
+            transition: transform 0.3s ease-in-out;
+            transform: translateX(100%);
+        }
+        #mobile-menu.active {
+            transform: translateX(0);
+        }
     </style>
 </head>
 <body class="bg-white text-black text-[11px] antialiased">
 
-    <header class="w-full border-b border-gray-50">
-        <div class="max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+    <header class="w-full border-b border-gray-50 sticky top-0 bg-white z-50">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
             <div class="flex-shrink-0">
                 <a href="index.html">
-                    <img src="logo.png" alt="Neofort BIZ" class="h-14 w-auto">
+                    <img src="logo.png" alt="Neofort BIZ" class="h-12 md:h-14 w-auto">
                 </a>
             </div>
             
@@ -34,23 +40,41 @@
                 <a href="servicii.html" class="hover:text-gray-500 transition">Servicii</a>
                 <a href="contact.html" class="hover:text-green-700 transition">Contact</a>
             </nav>
+
+            <button id="menu-btn" class="md:hidden flex flex-col gap-1.5 p-2">
+                <span class="w-6 h-[1px] bg-black"></span>
+                <span class="w-6 h-[1px] bg-black"></span>
+                <span class="w-6 h-[1px] bg-black"></span>
+            </button>
         </div>
     </header>
 
+    <div id="mobile-menu" class="fixed inset-0 bg-white z-[60] flex flex-col items-center justify-center gap-8 md:hidden">
+        <button id="close-btn" class="absolute top-8 right-8 text-2xl font-light uppercase tracking-widest">X</button>
+        <nav class="flex flex-col items-center gap-6 text-[12px] tracking-[0.4em] uppercase font-light">
+            <a href="index.html" class="font-bold border-b border-black">Acasa</a>
+            <a href="salamander.html" class="hover:text-green-700 transition">Tamplarie PVC</a>
+            <a href="alumil.html" class="hover:text-blue-700 transition">Tamplarie Aluminiu</a>
+            <a href="accesorii.html" class="hover:text-orange-600 transition">Accesorii</a>
+            <a href="servicii.html" class="hover:text-gray-500 transition">Servicii</a>
+            <a href="contact.html" class="hover:text-green-700 transition">Contact</a>
+        </nav>
+    </div>
+
     <main>
         <section class="max-w-7xl mx-auto px-6 py-12 flex flex-col md:flex-row gap-4">
-            <div class="flex-1 bg-gray-50 p-16 text-center border border-transparent hover:border-gray-100 transition-all duration-500">
+            <div class="flex-1 bg-gray-50 p-12 md:p-16 text-center border border-transparent hover:border-gray-100 transition-all duration-500">
                 <span class="text-[8px] tracking-[0.5em] text-green-700 uppercase mb-4 block font-semibold">Tehnologie Germana</span>
-                <h2 class="text-3xl font-extralight uppercase tracking-tighter mb-6 leading-tight">Tamplarie <br><strong>PVC Salamander</strong></h2>
+                <h2 class="text-2xl md:text-3xl font-extralight uppercase tracking-tighter mb-6 leading-tight">Tamplarie <br><strong>PVC Salamander</strong></h2>
                 <p class="text-gray-400 mb-10 max-w-xs mx-auto text-[11px] leading-relaxed uppercase tracking-widest text-justify">
                     Eficienta energetica nZEB si design atemporal pentru proiecte rezidentiale de top.
                 </p>
                 <a href="salamander.html" class="inline-block border border-black px-12 py-4 text-[9px] font-bold tracking-widest uppercase hover:bg-black hover:text-white transition">Vezi Profile</a>
             </div>
 
-            <div class="flex-1 bg-gray-50 p-16 text-center border border-transparent hover:border-gray-100 transition-all duration-500">
+            <div class="flex-1 bg-gray-50 p-12 md:p-16 text-center border border-transparent hover:border-gray-100 transition-all duration-500">
                 <span class="text-[8px] tracking-[0.5em] text-blue-700 uppercase mb-4 block font-semibold">Arhitectura Moderna</span>
-                <h2 class="text-3xl font-extralight uppercase tracking-tighter mb-6 leading-tight">Tamplarie <br><strong>Aluminiu Alumil</strong></h2>
+                <h2 class="text-2xl md:text-3xl font-extralight uppercase tracking-tighter mb-6 leading-tight">Tamplarie <br><strong>Aluminiu Alumil</strong></h2>
                 <p class="text-gray-400 mb-10 max-w-xs mx-auto text-[11px] leading-relaxed uppercase tracking-widest text-justify">
                     Suprafete vitrate mari si durabilitate extrema pentru arhitectura contemporana.
                 </p>
@@ -58,14 +82,14 @@
             </div>
         </section>
 
-        <section class="max-w-5xl mx-auto px-6 py-20 border-t border-gray-50">
+        <section class="max-w-5xl mx-auto px-6 py-16 border-t border-gray-50">
             <h2 class="text-[13px] font-bold uppercase tracking-[0.4em] mb-12 text-center text-gray-900">Excelenta in Tamplarie Termoizolanta</h2>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 text-[12px] leading-[1.8] text-gray-500 text-justify">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 md:gap-16 text-[12px] leading-[1.8] text-gray-500 text-justify">
                 <p>
                     Alegerea intre <strong class="text-black">tamplarie PVC Salamander</strong> si <strong class="text-black">tamplarie aluminiu Alumil</strong> este definitorie pentru eficienta energetica a oricarei constructii moderne. La Neofort BIZ, integram tehnologia de varf cu designul minimalist pentru a oferi bariere termice de neegalat. Profilele noastre sunt certificate pentru standardele <strong class="text-black uppercase">NZEB (Nearly Zero Energy Building)</strong>, asigurand o economie reala la costurile de incalzire.
                 </p>
                 <p>
-                    Fie ca optezi pentru robustetea sistemelor de <strong class="text-black">aluminiu cu bariera termica</strong> sau pentru izolarea fonica superioara a <strong class="text-black">ferestrelor PVC Salamander</strong>, echipa noastra ofera consultanta tehnica dedicata si montaj profesional. Ne concentram pe detalii esentiale precum bagheta calda (warm-edge) si pachete de sticla tripan cu emisivitate scazuta pentru un confort termic impecabil pe tot parcursul anului.
+                    Fie ca optezi pentru robustetea sistemelor de <strong class="text-black">aluminiu cu bariera termica</strong> sau pentru izolarea fonica superioara a <strong class="text-black font-semibold">ferestrelor PVC Salamander</strong>, echipa noastra ofera consultanta tehnica dedicata si montaj profesional. Ne concentram pe detalii esentiale precum bagheta calda (warm-edge) si pachete de sticla tripan cu emisivitate scazuta pentru un confort termic impecabil.
                 </p>
             </div>
         </section>
@@ -76,6 +100,28 @@
             Specialisti in Tamplarie PVC Salamander si Aluminiu Alumil - Neofort BIZ 2026
         </p>
     </footer>
+
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const closeBtn = document.getElementById('close-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.add('active');
+        });
+
+        closeBtn.addEventListener('click', () => {
+            mobileMenu.classList.remove('active');
+        });
+
+        // Inchide meniul daca se da click pe un link
+        const menuLinks = mobileMenu.querySelectorAll('a');
+        menuLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+            });
+        });
+    </script>
 
 </body>
 </html>
